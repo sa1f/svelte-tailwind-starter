@@ -32,6 +32,30 @@ Navigate to [localhost:5000](http://localhost:5000). You should see your app run
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
 
+## Folder Structure
+
+```
+├── README.md
+├── package.json
+├── postcss.config.js       # Handles all css processing using https://postcss.org
+├── public
+│   ├── build
+│   │   ├── bundle.css      # Bundles main.css and all <style> tags from *.svelte files
+│   │   ├── bundle.css.map
+│   │   ├── bundle.js       # Bundles main.js 
+│   │   └── bundle.js.map
+│   ├── favicon.png
+│   └── index.html          # What the server sends to the user
+├── rollup.config.js        # Handles configs for bundling and serving things (like webpack)
+├── src
+│   ├── App.svelte          # Start editing here 👈
+│   ├── main.css            
+│   └── main.js             
+├── tailwind.config.js      # https://tailwindcss.com/docs/configuration/
+└── yarn.lock
+```
+
+
 ## Building and running in production mode
 
 To create an optimised version of the app:
