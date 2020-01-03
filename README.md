@@ -1,10 +1,6 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# Svelte Starter Template (with TailwindCSS) 
 
----
-
-# svelte app
-
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+This is a project template for [Svelte](https://svelte.dev) apps. It is forked from https://github.com/sveltejs/template. It adds support for [TailwindCSS](https://tailwindcss.com)
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
@@ -22,13 +18,13 @@ Install the dependencies...
 
 ```bash
 cd svelte-app
-npm install
+yarn # or npm i
 ```
 
 ...then start [Rollup](https://rollupjs.org):
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
